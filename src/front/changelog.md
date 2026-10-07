@@ -5,6 +5,7 @@ requests, reviewed, then merged.
 
 ## 2026-10-07
 
+- Added Book XII, Chapter 3: Types, Traits and Error Handling (code compiled and tested).
 - Added Book XII, Chapters 1–2: Why Rust, and When; Ownership, Borrowing and Lifetimes.
 - Added Book XI, Chapter 11: Using AI as a Developer. Book XI is complete.
 - Added Book XI, Chapters 9–10: Security, Privacy and Cost; AI in .NET and React.

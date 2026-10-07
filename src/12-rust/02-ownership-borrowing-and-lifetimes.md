@@ -380,6 +380,9 @@ fn main() -> Result<()> {
 What the borrow checker guarantees here:
 
 - `AccessRecord` borrows `tenant` and `route` directly from `line`: no allocation per field.
+  (One caveat: a JSON string containing escape sequences like `\"` can't be borrowed as-is, so
+  deserialization fails for that line. Using `Cow<'a, str>` with `#[serde(borrow)]` borrows when possible
+  and allocates only when needed.)
 - The compiler **forces** `rec` to be dead before `line.clear()` reuses the buffer. If we tried to store
   `rec` in `stats` (keeping the borrow alive), it wouldn't compile; that's why `Stats` stores **owned**
   `String` keys via `to_owned()`. In C#, the equivalent span-based code relies on you remembering that the
