@@ -5,6 +5,7 @@ requests, reviewed, then merged.
 
 ## 2026-10-07
 
+- Added Book VI, Chapter 5: Authentication in the Browser.
 - Added Book VI, Chapters 3–4: State Management; Routing, Forms and Data Fetching.
 - Added Book VI, Chapters 1–2: How React Works; Hooks.
 - Added Book V, Chapter 5: TypeScript in Depth. Book V is complete.
