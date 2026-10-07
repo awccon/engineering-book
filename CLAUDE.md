@@ -59,9 +59,37 @@ State after Book I (keep consistent):
   Zustand `useUiStore` (density, liveStatus), feature folders `features/tickets`, `shared/ui`, Vitest + RTL + MSW.
   `src/Beacon.Bff` (cookie `__Host-beacon`, OIDC code flow, YARP proxy /api and /hubs to Beacon.Api, SPA fallback).
 - Tests: `tests/Beacon.Api.Tests` (WebApplicationFactory<Program>), `tests/Beacon.Core.Tests` (xUnit, `TicketBuilder`, `FakeTicketRepository`, FakeTimeProvider).
+- Books VII–IX: generated OpenAPI contract → TS types, Playwright E2E; hardened containers, Compose, Nginx;
+  Azure Container Apps (`ca-beacon-bff` external via Front Door, `ca-beacon-api` internal, `ca-beacon-worker`,
+  jobs `beacon-migrate`, `beacon-retention`), PostgreSQL Flexible Server, Azure Managed Redis, Blob Storage,
+  Key Vault, App Configuration flags, Application Insights + SLOs, GitHub Actions with OIDC, Bicep, canary releases.
+- Books X–XII: `beacon-tools` (Python, uv: import/export/evals); AI features (triage, summaries, reply drafts,
+  RAG help assistant, incident agent) via Microsoft.Extensions.AI / Agent Framework / Foundry, pgvector;
+  Rust `beacon-logscan` (Rayon) and `beacon-relay` (Tokio/axum webhook delivery, HMAC, SSRF guard).
+- Book XIII: modular monolith (modules Tickets, Knowledge, Directory, Notifications, Assistant, Billing; per-module
+  schemas, `*.Contracts` projects, architecture tests), integration events via outbox → Service Bus topic
+  `beacon-events` (subscriptions notifications/search/webhooks/analytics), inbox tables, Idempotency-Key filter,
+  multi-tenant (organizations, EF query filters + RLS via `beacon.tenant_id`), ADRs. Book XIV: Aspire AppHost,
+  production readiness review.
 
 ## Publishing
 
 After each chapter: update the book's `README.md` status line, add a line to
 `src/front/changelog.md`, run `mdbook build`, commit, push to `main` (CI deploys to
 GitHub Pages). Updates to *existing* content after review go through pull requests.
+
+## Maintenance (monthly update run)
+
+All 95 chapters are written. Ongoing work is keeping the book current:
+
+1. Check every `🔄 Current (as of …)` callout (`grep -rn "🔄 Current" src`) and the baseline versions above
+   against official sources (release notes, support policies, docs). Verify with web search before changing.
+2. Fix factual drift only: versions, renamed products, changed APIs, end-of-support dates, new GA releases
+   that change a recommendation. Don't rewrite durable (🧱) content or restyle chapters.
+3. Update the callout's "as of" month for every callout you re-verify or change, and update the baseline here.
+4. Work on a branch `update/YYYY-MM`, add one changelog entry per change under a dated header in
+   `src/front/changelog.md`, run `mdbook build`, push the branch, and open a PR to `main` with the REST API
+   (`gh api repos/awccon/engineering-book/pulls -f title=… -f head=update/YYYY-MM -f base=main -f body=…`;
+   GraphQL is unavailable). Never push directly to `main` for updates; the owner reviews and merges.
+5. The PR body lists each change with the source URL that justifies it. If nothing needs changing, open no PR
+   and say so in the run summary.
