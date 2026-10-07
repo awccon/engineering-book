@@ -1,6 +1,6 @@
 # Book I — Programming & C#
 
-> **Status:** in progress — Chapter 1 written
+> **Status:** in progress — 3 of 14 chapters written
 
 ## Chapters
 
