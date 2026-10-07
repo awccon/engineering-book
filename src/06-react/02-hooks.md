@@ -384,33 +384,40 @@ that ticket refreshes.
 
 ### Debounced search
 
+A first instinct is to give the search box its own state and an effect that calls
+`onSearch(debounced)` whenever the debounced value changes. That's an effect whose only job
+is to notify a parent, which section 5 warned against. The cleaner design: the **parent owns
+the term**, the input is controlled, and the parent derives the debounced value it queries
+with:
+
 ```tsx
 // web/src/tickets/TicketSearch.tsx
-import { useId, useState } from 'react';
-import { useDebouncedValue } from '../hooks/useDebouncedValue';
+import { useId } from 'react';
 
-export function TicketSearch({ onSearch }: { onSearch: (term: string) => void }) {
-  const [term, setTerm] = useState('');
-  const debounced = useDebouncedValue(term.trim(), 300);
+type Props = { value: string; onChange: (value: string) => void };
+
+export function TicketSearch({ value, onChange }: Props) {
   const inputId = useId();
-
-  // Notifying the parent about a debounced value is legitimately a "synchronize" step,
-  // but simpler: let the parent read the debounced value. Here we pass it up explicitly.
-  useNotifyOnChange(debounced, onSearch);
-
   return (
     <div className="search">
       <label htmlFor={inputId}>Search tickets</label>
-      <input id={inputId} type="search" value={term} onChange={e => setTerm(e.target.value)} />
+      <input id={inputId} type="search" value={value} onChange={e => onChange(e.target.value)} />
     </div>
   );
 }
 ```
 
-On reflection, `useNotifyOnChange` is an effect that exists only to call a parent callback,
-which section 5 warned against. A cleaner design: the parent owns `term`, and *it* uses
-`useDebouncedValue(term)` to drive the query (Chapter 4 does exactly this). Code review
-catches this kind of thing; it's worth practicing on your own code.
+```tsx
+// in the page component
+const [term, setTerm] = useState('');
+const debouncedTerm = useDebouncedValue(term.trim(), 300);
+// debouncedTerm drives the query (Chapter 4); no effect needed to "notify" anyone
+
+<TicketSearch value={term} onChange={setTerm} />
+```
+
+`useId` generates a stable, unique ID so the label is correctly associated with the input,
+even if the component appears several times on a page.
 
 ### A tested reducer
 
