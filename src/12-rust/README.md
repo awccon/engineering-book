@@ -1,6 +1,6 @@
 # Book XII — Rust
 
-> **Status:** planned
+> **Status:** in progress — 2 of 4 chapters written
 
 ## Chapters
 
