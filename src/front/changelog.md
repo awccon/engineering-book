@@ -5,6 +5,7 @@ requests, reviewed, then merged.
 
 ## 2026-10-07
 
+- Book XIV, Chapter 2: Further Projects, and the afterword. All 95 chapters are complete.
 - Book XIV, Chapter 1: Capstone: The Complete Running Project.
 - Book XIII, Chapter 9: System Design and Interviews. Book XIII is complete.
 - Book XIII, Chapter 8: How Experienced Engineers Think.

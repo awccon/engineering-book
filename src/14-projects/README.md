@@ -1,6 +1,6 @@
 # Book XIV — Real-World Projects
 
-> **Status:** in progress — 1 of 2 chapters written
+> **Status:** complete — all 2 chapters written
 
 ## Chapters
 
