@@ -330,19 +330,29 @@ Scripts deserve tests too, especially those that change data. **respx** mocks ht
 transport level (MSW for Python; Book VI, Chapter 7):
 
 ```python
-import respx
 import httpx
 import pytest
+import respx
+
 from beacon_tools.client import BeaconClient
+
+def ticket(i: int) -> dict:
+    return {"id": f"T-{i}", "title": f"Ticket {i}", "status": "Open", "priority": "Normal",
+            "assignee": None, "createdAt": "2026-10-07T09:00:00Z", "commentCount": 0}
 
 @pytest.mark.asyncio
 @respx.mock
 async def test_list_tickets_follows_cursors():
-    respx.get("https://beacon.test/api/tickets", params={"cursor": None}).mock(...)  # page 1 with nextCursor
-    # ... page 2 without nextCursor
-    async with BeaconClient("https://beacon.test", "token") as c:
-        ids = [t.id async for t in c.list_tickets()]
+    route = respx.get("https://beacon.test/api/tickets").mock(side_effect=[
+        httpx.Response(200, json={"items": [ticket(1), ticket(2)], "nextCursor": "abc"}),
+        httpx.Response(200, json={"items": [ticket(3)], "nextCursor": None}),
+    ])
+
+    async with BeaconClient("https://beacon.test", "token") as client:
+        ids = [t.id async for t in client.list_tickets()]
+
     assert ids == ["T-1", "T-2", "T-3"]
+    assert route.calls[1].request.url.params["cursor"] == "abc"
 ```
 
 ---
