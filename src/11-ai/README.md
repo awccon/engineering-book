@@ -1,6 +1,6 @@
 # Book XI — AI Application Engineering
 
-> **Status:** in progress — 8 of 11 chapters written
+> **Status:** in progress — 10 of 11 chapters written
 
 ## Chapters
 

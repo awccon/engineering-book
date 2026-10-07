@@ -238,7 +238,7 @@ evals/
     reply_draft.jsonl           60 threads with expert notes
     incident_agent.jsonl        15 historical incidents with expert-linked tickets
   judges/
-    grounded_complete_safe.md  rubric prompt (calibrated: 92% agreement with 2 experts on 80 cases)
+    grounded_complete_safe.md  rubric prompt (calibrated against two experts' grades on 80 cases)
   run_eval.py                  runs a dataset against a target config, stores results
   compare.py                   diffs two runs: metrics, per-case regressions, cost/latency
 ```
@@ -249,6 +249,8 @@ evals/
 uv run python -m evals.run_eval --dataset help_assistant --target staging --prompt HelpAnswer.v5 --samples 2
 uv run python -m evals.compare runs/help_assistant/main.json runs/help_assistant/HelpAnswer.v5.json
 ```
+
+Illustrative output:
 
 ```text
 help_assistant: HelpAnswer.v4 (main) vs HelpAnswer.v5
