@@ -5,6 +5,7 @@ requests, reviewed, then merged.
 
 ## 2026-10-07
 
+- Added Book VIII, Chapter 7: Troubleshooting Linux. Book VIII is complete.
 - Added Book VIII, Chapters 5–6: Docker Compose, Networking and Volumes; Production Containers and Security.
 - Added Book VIII, Chapters 3–4: Nginx, Reverse Proxies and TLS; Containers and Images.
 - Added Book VIII, Chapters 1–2: Linux Fundamentals; Linux Services and Networking.
