@@ -5,6 +5,7 @@ requests, reviewed, then merged.
 
 ## 2026-10-07
 
+- Added Book I, Chapters 10–11: Threading and Concurrency; Memory, the GC and Performance.
 - Added Book I, Chapters 8–9: Exceptions and Error Handling; Async/Await from the Inside.
 - Added Book I, Chapters 6–7: Delegates, Events and Lambdas; LINQ.
 - Added Book I, Chapters 4–5: Generics; Collections and Data Structures.
