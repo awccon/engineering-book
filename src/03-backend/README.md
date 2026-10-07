@@ -1,6 +1,6 @@
 # Book III — .NET & Backend
 
-> **Status:** in progress — 5 of 10 chapters written
+> **Status:** in progress — 7 of 10 chapters written
 
 ## Chapters
 

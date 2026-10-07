@@ -5,6 +5,7 @@ requests, reviewed, then merged.
 
 ## 2026-10-07
 
+- Added Book III, Chapters 6–7: Authentication and Authorization; Caching.
 - Added Book III, Chapters 4–5: Designing REST APIs; Validation and Serialization.
 - Added Book III, Chapters 1–3: HTTP from First Principles; ASP.NET Core Fundamentals; Configuration, Options and Logging.
 - Added Book II — Git & Developer Workflow (all 3 chapters).
