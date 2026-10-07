@@ -5,6 +5,7 @@ requests, reviewed, then merged.
 
 ## 2026-10-07
 
+- Book XIII, Chapter 1: Design Principles and Patterns.
 - Added Book XII, Chapter 4: Concurrency, Async and Networking (code compiled and tested). Book XII is complete.
 - Added Book XII, Chapter 3: Types, Traits and Error Handling (code compiled and tested).
 - Added Book XII, Chapters 1–2: Why Rust, and When; Ownership, Borrowing and Lifetimes.

@@ -1,6 +1,6 @@
 # Book XIII — Architecture, Security & System Design
 
-> **Status:** planned
+> **Status:** in progress — 1 of 9 chapters written
 
 ## Chapters
 
