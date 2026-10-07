@@ -186,8 +186,7 @@ Pick one per repository and stick with it (the lock file format differs). This b
 
 **Content hashes** in filenames enable aggressive caching: the browser can cache
 `index-3f9a1c.js` forever (`Cache-Control: immutable`), because any change produces a new
-name. `index.html` must not be cached long, since it points at the current hashes (Book
-I'll revisit this in hosting: Book VIII).
+name. `index.html` must not be cached long, since it points at the current hashes (Book VIII revisits this when hosting the app).
 
 ### Vite
 
