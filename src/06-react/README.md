@@ -1,6 +1,6 @@
 # Book VI — React & Frontend
 
-> **Status:** in progress — 5 of 7 chapters written
+> **Status:** complete — all 7 chapters written
 
 ## Chapters
 
