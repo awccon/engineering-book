@@ -1,6 +1,6 @@
 # Book II — Git & Developer Workflow
 
-> **Status:** planned
+> **Status:** complete — all 3 chapters written
 
 ## Chapters
 
