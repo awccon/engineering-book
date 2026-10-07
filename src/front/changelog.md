@@ -5,4 +5,5 @@ requests, reviewed, then merged.
 
 ## 2026-10-07
 
+- Added Book I, Chapter 1: *How Programs Run: The .NET Runtime, IL and the JIT* (targets .NET 10).
 - Book created: site skeleton, master plan and chapter outline.
