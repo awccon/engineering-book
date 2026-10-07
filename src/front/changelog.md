@@ -5,6 +5,7 @@ requests, reviewed, then merged.
 
 ## 2026-10-07
 
+- Added Book XI, Chapter 11: Using AI as a Developer. Book XI is complete.
 - Added Book XI, Chapters 9–10: Security, Privacy and Cost; AI in .NET and React.
 - Added Book XI, Chapters 7–8: AI Agents; Evaluation and Hallucination Management.
 - Added Book XI, Chapters 5–6: Embeddings and Semantic Search; Retrieval-Augmented Generation.
