@@ -5,6 +5,7 @@ requests, reviewed, then merged.
 
 ## 2026-10-07
 
+- Added Book IX, Chapters 3–4: Compute; Data and Storage.
 - Added Book IX, Chapters 1–2: Cloud Fundamentals; Identity and Security in Azure.
 - Added Book VIII, Chapter 7: Troubleshooting Linux. Book VIII is complete.
 - Added Book VIII, Chapters 5–6: Docker Compose, Networking and Volumes; Production Containers and Security.
