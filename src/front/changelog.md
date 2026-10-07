@@ -5,6 +5,7 @@ requests, reviewed, then merged.
 
 ## 2026-10-07
 
+- Added Book IV, Chapters 7–8: EF Core; Database Security and Operations. Book IV is complete.
 - Added Book IV, Chapters 5–6: Transactions, Isolation and Locking; Query Optimization and Execution Plans.
 - Added Book IV, Chapters 3–4: PostgreSQL Specifics; Indexes.
 - Added Book IV, Chapters 1–2: Relational Thinking; SQL in Depth.
