@@ -1,6 +1,6 @@
 # Book IX — Azure, Cloud & DevOps
 
-> **Status:** planned
+> **Status:** in progress — 2 of 9 chapters written
 
 ## Chapters
 
