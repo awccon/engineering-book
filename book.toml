@@ -1,0 +1,15 @@
+[book]
+title = "The Modern Software Engineer"
+description = "From C#/.NET developer to full-stack, cloud and AI-capable software engineer."
+authors = ["awccon"]
+language = "en"
+src = "src"
+
+[output.html]
+default-theme = "light"
+preferred-dark-theme = "navy"
+git-repository-url = "https://github.com/awccon/engineering-book"
+edit-url-template = "https://github.com/awccon/engineering-book/edit/main/{path}"
+
+[output.html.search]
+enable = true
