@@ -481,16 +481,26 @@ is a lightweight form of CQRS (Book XIII).
 2. **Remove `InMemoryTicketRepository`** from Beacon.Api; call `AddBeaconInfrastructure`.
 3. **Initial migration** generating the schema from Chapter 1 (compare the generated SQL to
    the hand-written schema and adjust configuration until they match).
-4. **The list endpoint** becomes the projected query from section 4, with the cursor
-   condition expressed in LINQ:
+4. **The list endpoint** becomes the projected query from section 4. The cursor condition is
+   the one place LINQ gets awkward: EF Core can't translate `t.Id.Value` on a value-converted
+   property, and C# has no row-comparison syntax. EF Core lets you start from SQL and keep
+   composing in LINQ, which handles it neatly:
 
 ```csharp
-query = query.Where(t => t.CreatedAt < cursor.CreatedAt
-                      || (t.CreatedAt == cursor.CreatedAt && t.Id.Value < cursor.Id));
+IQueryable<Ticket> source = cursor is null
+    ? db.Tickets
+    : db.Tickets.FromSql($"select * from tickets where (created_at, id) < ({cursor.Value.CreatedAt}, {cursor.Value.Id})");
+
+var items = await source
+    .Where(t => t.TeamId == teamId && (t.Status == TicketStatus.Open || t.Status == TicketStatus.InProgress))
+    .OrderByDescending(t => t.CreatedAt).ThenByDescending(t => t.Id)
+    .Select(t => new TicketListItem(t.Id, t.Title, t.Status, t.Priority, t.AssigneeId, t.CreatedAt, t.Comments.Count))
+    .Take(limit + 1)
+    .ToListAsync(ct);
 ```
 
-   (Note `t.Id.Value`: with the value converter, Npgsql translates member access on the
-   converted type for simple wrappers; if not, compare to `new TicketId(cursor.Id)` instead.)
+   The interpolated values are parameterized, and PostgreSQL's row comparison
+   `(created_at, id) < (@p0, @p1)` matches the `tickets_team_open_page` index exactly.
 
 5. **Integration tests against real PostgreSQL** with Testcontainers:
 
