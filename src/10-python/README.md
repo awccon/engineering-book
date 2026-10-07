@@ -1,6 +1,6 @@
 # Book X — Python
 
-> **Status:** in progress — 2 of 3 chapters written
+> **Status:** complete — all 3 chapters written
 
 ## Chapters
 

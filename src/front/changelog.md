@@ -5,6 +5,7 @@ requests, reviewed, then merged.
 
 ## 2026-10-07
 
+- Added Book X, Chapter 3: Practical Python. Book X is complete.
 - Added Book X, Chapters 1–2: Python for C# Developers; Environments and Packages.
 - Added Book IX, Chapter 9: Infrastructure as Code and Deployment Strategies. Book IX is complete.
 - Added Book IX, Chapters 7–8: Scaling, Availability and Cost; CI/CD.
