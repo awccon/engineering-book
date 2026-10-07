@@ -5,6 +5,7 @@ requests, reviewed, then merged.
 
 ## 2026-10-07
 
+- Added Book XI, Chapters 5–6: Embeddings and Semantic Search; Retrieval-Augmented Generation.
 - Added Book XI, Chapters 3–4: Prompt Engineering; Structured Output and Tool Calling.
 - Added Book XI, Chapters 1–2: How LLMs Work (for Engineers); Working with AI APIs.
 - Added Book X, Chapter 3: Practical Python. Book X is complete.
