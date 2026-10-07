@@ -24,9 +24,22 @@ and depth.
 A team knowledge base + support desk. Solution `Beacon.sln` with `src/Beacon.Core`
 (domain), `src/Beacon.Cli`, later `src/Beacon.Api` (ASP.NET Core), `src/Beacon.Infrastructure`
 (EF Core/PostgreSQL), `tests/Beacon.Core.Tests` (xUnit), `web/` (React + TS + Vite).
-Domain so far: `Beacon.Core.Tickets.Ticket` (sealed record: Id, Title, Status),
-`TicketStatus { Open, InProgress, Resolved, Closed }`. Grow it consistently; later
-entities: `Article` (knowledge base), `Comment`, `User`, `Team`.
+State after Book I (keep consistent):
+- `Beacon.Core.Tickets`: `TicketId` (readonly record struct, ToString "T-{n}"), `TicketStatus`,
+  `TicketPriority {Low, Normal, High, Urgent}`, `Comment` record(Author, Body, CreatedAt),
+  `Ticket` sealed class : `IEntity<TicketId>` — ctor(TicketId, title, priority, createdAt),
+  AssignTo(assignee, now), AddComment(comment), Resolve(now), Close(), Reopen(), DomainEvents,
+  ClearDomainEvents(); throws `DomainException` when closed. Events `TicketAssigned`, `TicketResolved`.
+  `SlaRules` (ResponseTarget, IsBreaching), `TriageQueue`, `TicketSummary` record,
+  `ITicketRepository` (FindAsync, SaveAsync), `TicketService(ITicketRepository, TimeProvider)`
+  with `AddCommentAsync` returning `Result<Ticket>`.
+- `Beacon.Core.Common`: `Result<T>` (readonly struct, Match), `Error(Code, Message)` with
+  NotFound/Conflict/Validation (codes not_found/conflict/validation), `IEntity<TId>`,
+  `IDomainEvent`, `EventDispatcher`, `DomainException`, `SensitiveAttribute`.
+- Others: `Beacon.Core.Notifications.INotifier`, `Beacon.Core.Auditing.AuditLog`/`AuditFormatter`,
+  `Beacon.Core.Indexing.IndexingQueue` (Channel), `Beacon.Core.Reports.AgentWorkloadReport`,
+  `AddBeaconCore()` DI extension. CLI uses Generic Host + `CliApp`.
+- Tests: `tests/Beacon.Core.Tests` (xUnit, `TicketBuilder`, `FakeTicketRepository`, FakeTimeProvider).
 
 ## Publishing
 

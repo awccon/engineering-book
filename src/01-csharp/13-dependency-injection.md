@@ -357,7 +357,6 @@ builder.Services.AddSingleton<INotifier, ConsoleNotifier>();
 builder.Services.AddSingleton<TicketIdGenerator>();
 builder.Services.AddTransient<CliApp>();
 
-builder.Services.Configure<HostOptions>(_ => { });   // placeholder for later configuration
 using var host = builder.Build();
 
 await using var scope = host.Services.CreateAsyncScope();

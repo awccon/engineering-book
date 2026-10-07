@@ -5,6 +5,7 @@ requests, reviewed, then merged.
 
 ## 2026-10-07
 
+- Added Book I, Chapter 14: Testing. Book I is complete.
 - Added Book I, Chapters 12–13: Reflection, Attributes and Source Generators; Dependency Injection.
 - Added Book I, Chapters 10–11: Threading and Concurrency; Memory, the GC and Performance.
 - Added Book I, Chapters 8–9: Exceptions and Error Handling; Async/Await from the Inside.
