@@ -5,6 +5,7 @@ requests, reviewed, then merged.
 
 ## 2026-10-07
 
+- Added Book III, Chapters 1–3: HTTP from First Principles; ASP.NET Core Fundamentals; Configuration, Options and Logging.
 - Added Book II — Git & Developer Workflow (all 3 chapters).
 - Added Book I, Chapter 14: Testing. Book I is complete.
 - Added Book I, Chapters 12–13: Reflection, Attributes and Source Generators; Dependency Injection.
