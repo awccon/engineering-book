@@ -5,6 +5,7 @@ requests, reviewed, then merged.
 
 ## 2026-10-07
 
+- Book XIII, Chapter 4: Messaging and Event-Driven Architecture.
 - Book XIII, Chapter 3: Distributed Systems.
 - Book XIII, Chapter 2: Application Architecture.
 - Book XIII, Chapter 1: Design Principles and Patterns.
