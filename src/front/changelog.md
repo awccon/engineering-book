@@ -5,6 +5,7 @@ requests, reviewed, then merged.
 
 ## 2026-10-07
 
+- Added Book IX, Chapters 7–8: Scaling, Availability and Cost; CI/CD.
 - Added Book IX, Chapters 5–6: Networking; Monitoring and Observability.
 - Added Book IX, Chapters 3–4: Compute; Data and Storage.
 - Added Book IX, Chapters 1–2: Cloud Fundamentals; Identity and Security in Azure.
