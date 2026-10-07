@@ -315,8 +315,9 @@ export async function streamSummary(ticketId: string, onToken: (t: string) => vo
     const events = buffer.split('\n\n');
     buffer = events.pop() ?? '';
     for (const evt of events) {
-      const data = evt.split('\n').find(l => l.startsWith('data: '))?.slice(6);
-      if (data) onToken(JSON.parse(data) as string);
+      // A string item is written as raw text; multi-line text arrives as several "data:" lines
+      const lines = evt.split('\n').filter(l => l.startsWith('data:')).map(l => l.replace(/^data: ?/, ''));
+      if (lines.length) onToken(lines.join('\n'));
     }
   }
 }
