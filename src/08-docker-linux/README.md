@@ -1,6 +1,6 @@
 # Book VIII — Docker & Linux
 
-> **Status:** planned
+> **Status:** in progress — 2 of 7 chapters written
 
 ## Chapters
 
