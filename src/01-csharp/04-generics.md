@@ -228,9 +228,9 @@ public static T Sum<T>(IEnumerable<T> values) where T : INumber<T>
     return total;
 }
 
-Sum([1, 2, 3]);            // 6 (int)
-Sum([1.5, 2.5]);           // 4.0 (double)
-Sum([10.00m, 0.99m]);      // 10.99 (decimal)
+Sum(new[] { 1, 2, 3 });            // 6 (int)
+Sum(new[] { 1.5, 2.5 });           // 4 (double)
+Sum(new[] { 10.00m, 0.99m });      // 10.99 (decimal)
 ```
 
 Because each numeric type is a value type, the JIT generates specialized code for each,
