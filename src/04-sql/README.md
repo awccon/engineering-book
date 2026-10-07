@@ -1,6 +1,6 @@
 # Book IV — SQL & PostgreSQL
 
-> **Status:** planned
+> **Status:** in progress — 2 of 8 chapters written
 
 ## Chapters
 

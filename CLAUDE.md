@@ -39,7 +39,15 @@ State after Book I (keep consistent):
 - Others: `Beacon.Core.Notifications.INotifier`, `Beacon.Core.Auditing.AuditLog`/`AuditFormatter`,
   `Beacon.Core.Indexing.IndexingQueue` (Channel), `Beacon.Core.Reports.AgentWorkloadReport`,
   `AddBeaconCore()` DI extension. CLI uses Generic Host + `CliApp`.
-- Tests: `tests/Beacon.Core.Tests` (xUnit, `TicketBuilder`, `FakeTicketRepository`, FakeTimeProvider).
+- Book II added `Ticket.Description`, `Ticket.Escalate()`. Book III added `Ticket.Version` (int, bumped on change),
+  `ReporterId` (sub), `Team`; `TicketId : IParsable` (accepts "T-7" or "7"), `TicketIdJsonConverter` ("T-7"),
+  `ICurrentUser`. Beacon.Api: minimal APIs in `Tickets/TicketEndpoints.cs` (MapGroup /api/tickets), contracts
+  `CreateTicketRequest`, `AddCommentRequest`, `TicketResponse`, `Page<T>`/`TicketCursor` cursor paging,
+  ETag/If-Match, Problem Details, JWT bearer + policies (roles customer/agent/lead; `TicketAuthorizationHandler`,
+  `TicketOperations.Read/Work`), HybridCache, output cache for KB articles, `NotificationQueue`+`NotificationWorker`,
+  SignalR `TicketHub` (/hubs/tickets), `SlaMonitor`, rate limiting, health checks. Data still in-memory
+  (`InMemoryTicketRepository`) until Book IV.
+- Tests: `tests/Beacon.Api.Tests` (WebApplicationFactory<Program>), `tests/Beacon.Core.Tests` (xUnit, `TicketBuilder`, `FakeTicketRepository`, FakeTimeProvider).
 
 ## Publishing
 
