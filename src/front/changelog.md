@@ -5,6 +5,7 @@ requests, reviewed, then merged.
 
 ## 2026-10-07
 
+- Added Book VIII, Chapters 3–4: Nginx, Reverse Proxies and TLS; Containers and Images.
 - Added Book VIII, Chapters 1–2: Linux Fundamentals; Linux Services and Networking.
 - Added Book VII, Chapter 3: End-to-End Testing and Environments. Book VII is complete.
 - Added Book VII, Chapters 1–2: How the Pieces Fit; Contracts Between Frontend and Backend.
