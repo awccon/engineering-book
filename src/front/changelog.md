@@ -5,6 +5,7 @@ requests, reviewed, then merged.
 
 ## 2026-10-07
 
+- Book XIII, Chapter 9: System Design and Interviews. Book XIII is complete.
 - Book XIII, Chapter 8: How Experienced Engineers Think.
 - Book XIII, Chapter 7: Maintainability, Technical Debt and Legacy Modernization.
 - Book XIII, Chapter 6: Security Engineering.
