@@ -5,6 +5,7 @@ requests, reviewed, then merged.
 
 ## 2026-10-07
 
+- Book XIII, Chapter 7: Maintainability, Technical Debt and Legacy Modernization.
 - Book XIII, Chapter 6: Security Engineering.
 - Book XIII, Chapter 5: Scalability, Reliability and Observability.
 - Book XIII, Chapter 4: Messaging and Event-Driven Architecture.
