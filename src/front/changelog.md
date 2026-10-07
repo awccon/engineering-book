@@ -5,6 +5,7 @@ requests, reviewed, then merged.
 
 ## 2026-10-07
 
+- Added Book V, Chapters 1–2: JavaScript the Language; The Event Loop and Async JavaScript.
 - Fixed cursor query example in Book IV, Chapter 7.
 - Added Book IV, Chapters 7–8: EF Core; Database Security and Operations. Book IV is complete.
 - Added Book IV, Chapters 5–6: Transactions, Isolation and Locking; Query Optimization and Execution Plans.

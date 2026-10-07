@@ -16,7 +16,7 @@ and depth.
   Version-specific facts go only in 🔄 callouts.
 - Target 4,000–7,000 words. Plain, direct prose; explain *why*; compare with C#/.NET when
   teaching other languages.
-- Current baseline (October 2026): .NET 10 / C# 14 (LTS), PostgreSQL 18, TypeScript 5.x,
+- Current baseline (October 2026): .NET 10 / C# 14 (LTS), PostgreSQL 18, TypeScript 7.0 (native Go compiler, GA July 2026; 6.0 was the last JS-based),
   React 19, Node 24 LTS, Python 3.14.
 
 ## Running project: Beacon
@@ -47,6 +47,11 @@ State after Book I (keep consistent):
   `TicketOperations.Read/Work`), HybridCache, output cache for KB articles, `NotificationQueue`+`NotificationWorker`,
   SignalR `TicketHub` (/hubs/tickets), `SlaMonitor`, rate limiting, health checks. Data still in-memory
   (`InMemoryTicketRepository`) until Book IV.
+- Book IV: PostgreSQL schema (tickets, comments, users(id=sub), teams, tags, ticket_tags, articles with
+  tsvector `search`, outbox, sla_targets); `Ticket` now has `TeamId`, `AssigneeId`, `ReporterId`, `ResolvedAt`,
+  `CustomFields` (jsonb). `src/Beacon.Infrastructure` with `BeaconDbContext` (snake_case), `EfTicketRepository`,
+  `DomainEventsToOutboxInterceptor`, outbox worker (skip locked). DB roles beacon_migrator/app/readonly.
+  Tests use Testcontainers (`BeaconApiFactory`).
 - Tests: `tests/Beacon.Api.Tests` (WebApplicationFactory<Program>), `tests/Beacon.Core.Tests` (xUnit, `TicketBuilder`, `FakeTicketRepository`, FakeTimeProvider).
 
 ## Publishing

@@ -1,6 +1,6 @@
 # Book V — JavaScript & TypeScript
 
-> **Status:** planned
+> **Status:** in progress — 2 of 5 chapters written
 
 ## Chapters
 
