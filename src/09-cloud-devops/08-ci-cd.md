@@ -299,8 +299,8 @@ jobs:
           curl --fail --retry 10 --retry-delay 6 --retry-all-errors https://${{ vars.HOSTNAME }}/health/ready
           curl --fail https://${{ vars.HOSTNAME }}/version | grep "${{ github.sha }}"
 
-      - name: Annotate deployment in Application Insights
-        run: az monitor app-insights events show ... # or post an annotation via REST: Chapter 6's dashboards
+      # Optionally: create a release annotation in Application Insights (REST API or an
+      # action) so deployments appear on Chapter 6's dashboards.
 ```
 
 ### What this pipeline guarantees
