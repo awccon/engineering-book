@@ -1,6 +1,6 @@
 # Book VII — Full-Stack Architecture
 
-> **Status:** planned
+> **Status:** in progress — 2 of 3 chapters written
 
 ## Chapters
 

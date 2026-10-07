@@ -5,6 +5,7 @@ requests, reviewed, then merged.
 
 ## 2026-10-07
 
+- Added Book VII, Chapters 1–2: How the Pieces Fit; Contracts Between Frontend and Backend.
 - Added Book VI, Chapters 6–7: Performance and Accessibility; Testing and Frontend Architecture. Book VI is complete.
 - Added Book VI, Chapter 5: Authentication in the Browser.
 - Added Book VI, Chapters 3–4: State Management; Routing, Forms and Data Fetching.

@@ -52,6 +52,12 @@ State after Book I (keep consistent):
   `CustomFields` (jsonb). `src/Beacon.Infrastructure` with `BeaconDbContext` (snake_case), `EfTicketRepository`,
   `DomainEventsToOutboxInterceptor`, outbox worker (skip locked). DB roles beacon_migrator/app/readonly.
   Tests use Testcontainers (`BeaconApiFactory`).
+- Books V–VI: `web/` (Vite + React 19 + TS strict, pnpm). `web/src/api/client.ts` (`ticketsApi`, `ApiError`,
+  `X-CSRF: 1` header, 401 → `/bff/login`), `types.ts` (TICKET_STATUSES/PRIORITIES as const), branded `TicketId`,
+  TanStack Query (`ticketKeys`, `ticketListQuery` infinite/cursor, `ticketDetailQuery`), React Router v7 lazy routes,
+  React Hook Form + Zod (`NewTicketForm`, `toFieldErrors`), SignalR `useTicketUpdates`, `SessionContext`/`useCan`,
+  Zustand `useUiStore` (density, liveStatus), feature folders `features/tickets`, `shared/ui`, Vitest + RTL + MSW.
+  `src/Beacon.Bff` (cookie `__Host-beacon`, OIDC code flow, YARP proxy /api and /hubs to Beacon.Api, SPA fallback).
 - Tests: `tests/Beacon.Api.Tests` (WebApplicationFactory<Program>), `tests/Beacon.Core.Tests` (xUnit, `TicketBuilder`, `FakeTicketRepository`, FakeTimeProvider).
 
 ## Publishing
