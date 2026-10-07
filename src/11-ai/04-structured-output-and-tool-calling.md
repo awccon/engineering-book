@@ -305,8 +305,8 @@ public sealed class TicketTriage(IChatClient chat, IOptions<AiOptions> ai, IProm
 
 The agent UI shows "Suggested priority: Urgent (AI) — Accept / Dismiss." Accepting or dismissing is
 recorded; dismissals become new cases in the classification evaluation set (Chapter 8). The 0.8
-threshold was chosen from the evaluation data: above it, suggestions matched expert labels 94% of
-the time.
+threshold is chosen from evaluation data (Chapter 8): the confidence level above which suggestions
+match expert labels often enough for the team's quality bar.
 
 ### A tool-using assistant (preview)
 

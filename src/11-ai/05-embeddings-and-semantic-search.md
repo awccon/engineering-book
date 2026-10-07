@@ -273,7 +273,7 @@ Book XI, Chapter 8 builds the evaluation; for search, the metrics are:
 - **Recall@k**: for each test query, is the expert-chosen article in the top k results?
 - **MRR** (mean reciprocal rank): how high is the first correct result?
 
-On Beacon's 120 test queries, keyword-only recall@5 was 61%, semantic-only 78%, hybrid 89%. Those
+On an illustrative set of 120 test queries, keyword-only recall@5 was 61%, semantic-only 78%, hybrid 89%. Those
 numbers, not intuition, justified the hybrid design.
 
 ---

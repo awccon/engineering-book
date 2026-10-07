@@ -256,6 +256,10 @@ public async IAsyncEnumerable<AssistantEvent> AnswerAsync(
 
 ### Evaluation results (from Chapter 8's harness)
 
+The numbers below are illustrative of the kind of progression teams typically see; your own
+evaluation set will produce its own.
+
+
 | Version | Retrieval recall@6 | Answer correct (judged) | Citation valid | "Couldn't find" when appropriate |
 |---|---|---|---|---|
 | v1: fixed 500-token chunks, semantic only | 71% | 64% | 88% | 52% |

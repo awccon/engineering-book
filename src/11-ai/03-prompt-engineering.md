@@ -294,7 +294,7 @@ Design notes, each traceable to this chapter:
 ### Iterating on it
 
 The evaluation set (Chapter 8) has 60 real ticket threads (sanitized) with the articles an expert
-agent would use. Version 4 of the prompt cited articles inconsistently; adding one example with
+agent would use. For example (illustrative numbers): version 4 of the prompt cited articles inconsistently; adding one example with
 correct citations and moving the citation rule into its own bullet raised citation correctness
 from 81% to 96% without hurting helpfulness scores. Version 5 added the "never promise" rule after
 reviewers found drafts offering "a credit for the inconvenience." Each change was a pull request
