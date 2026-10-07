@@ -5,6 +5,7 @@ requests, reviewed, then merged.
 
 ## 2026-10-07
 
+- Added Book IV, Chapters 3–4: PostgreSQL Specifics; Indexes.
 - Added Book IV, Chapters 1–2: Relational Thinking; SQL in Depth.
 - Added Book III, Chapter 10: Diagnosing API Failures. Book III is complete.
 - Added Book III, Chapters 8–9: Background Work and Real-Time; Securing a Web API.
