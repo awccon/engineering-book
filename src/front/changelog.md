@@ -5,6 +5,7 @@ requests, reviewed, then merged.
 
 ## 2026-10-07
 
+- Added Book III, Chapter 10: Diagnosing API Failures. Book III is complete.
 - Added Book III, Chapters 8–9: Background Work and Real-Time; Securing a Web API.
 - Added Book III, Chapters 6–7: Authentication and Authorization; Caching.
 - Added Book III, Chapters 4–5: Designing REST APIs; Validation and Serialization.
