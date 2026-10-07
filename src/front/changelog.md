@@ -5,6 +5,7 @@ requests, reviewed, then merged.
 
 ## 2026-10-07
 
+- Added Book V, Chapters 3–4: Modules, Tooling and the Ecosystem; TypeScript Fundamentals.
 - Added Book V, Chapters 1–2: JavaScript the Language; The Event Loop and Async JavaScript.
 - Fixed cursor query example in Book IV, Chapter 7.
 - Added Book IV, Chapters 7–8: EF Core; Database Security and Operations. Book IV is complete.
