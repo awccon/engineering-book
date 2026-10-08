@@ -293,7 +293,8 @@ cargo run -- --help
 ## 11. Going deeper
 
 - [*The Rust Programming Language*](https://doc.rust-lang.org/book/) ("the Book," free) — start here.
-- [Rust by Example](https://doc.rust-lang.org/rust-by-example/)
+- [*Rust By Example*](https://doc.rust-lang.org/rust-by-example/index.html) — runnable examples of each language
+  feature, from the official Rust site; a good companion to every chapter in this book.
 - [Rustlings](https://github.com/rust-lang/rustlings) — small exercises.
 - [Microsoft: Rust for .NET developers / Learn modules](https://learn.microsoft.com/training/paths/rust-first-steps/)
 

@@ -3,6 +3,10 @@
 Every update to the book is logged here, newest first. Updates are proposed as pull
 requests, reviewed, then merged.
 
+## 2026-10-08
+
+- Book XII: added *Rust By Example* as a companion resource on the Rust overview page and described it in Chapter 1's reading list.
+
 ## 2026-10-07
 
 - Book XIV, Chapter 2: Further Projects, and the afterword. All 95 chapters are complete.
