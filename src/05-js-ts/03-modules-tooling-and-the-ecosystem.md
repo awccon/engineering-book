@@ -198,10 +198,11 @@ name. `index.html` must not be cached long, since it points at the current hashe
 - **Production build**: a full optimized bundle.
 - **Plugins** for React, TypeScript paths, PWA and more.
 
-> **🔄 Current (as of October 2026):** Vite's internals are moving to **Rolldown**
-> (a Rust-based bundler) for faster builds, part of a broader trend of JavaScript tooling
-> being rewritten in Rust and Go (esbuild, SWC, Oxc, Biome, Rspack, and TypeScript 7's
-> native compiler). The concepts in this chapter are unchanged; the tools get faster.
+> **🔄 Current (as of November 2026):** Since Vite 8 (March 2026), Vite uses **Rolldown**
+> (a Rust-based bundler) as its single bundler for development and production, part of a
+> broader trend of JavaScript tooling being rewritten in Rust and Go (esbuild, SWC, Oxc,
+> Biome, Rspack, and TypeScript 7's native compiler). The concepts in this chapter are
+> unchanged; the tools get faster.
 
 ### Transpiling vs type checking
 

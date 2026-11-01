@@ -1,6 +1,6 @@
 # Why Rust, and When
 
-> **🔄 Current (as of October 2026):** Rust releases a new stable version every six weeks; the
+> **🔄 Current (as of November 2026):** Rust releases a new stable version every six weeks; the
 > current edition is **Rust 2024**. Examples use stable Rust with Cargo. Install with `rustup`.
 
 Book I began by asking what the .NET runtime does for you and what it costs. Rust is the

@@ -1,6 +1,6 @@
 # How React Works
 
-> **🔄 Current (as of October 2026):** This book targets React 19 (19.2 and later), with
+> **🔄 Current (as of November 2026):** This book targets React 19 (19.2 and later), with
 > the **React Compiler** (stable since October 2025) for automatic memoization, Vite for
 > client-rendered apps, and React Router for routing. Check react.dev for the latest
 > minor release.

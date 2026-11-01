@@ -171,9 +171,10 @@ storage, rate limiting counters, distributed locks, and pub/sub. Choose a tier w
 zone redundancy for production; remember that a cache is not a database (data can be
 evicted or lost).
 
-> **🔄 Current (as of October 2026):** Azure Managed Redis is the current Redis offering;
-> the older Azure Cache for Redis tiers are being retired. Check the migration timeline if you
-> run the older service.
+> **🔄 Current (as of November 2026):** Azure Managed Redis is the current Redis offering;
+> the older Azure Cache for Redis tiers are being retired (Enterprise and Enterprise Flash on
+> March 31, 2027; Basic, Standard and Premium on September 30, 2028). Check the migration
+> timeline if you run the older service.
 
 ### Messaging
 

@@ -295,8 +295,10 @@ Its concurrency model is exactly this chapter: one thread for JavaScript, non-bl
 for everything else. That's why it handles many concurrent I/O-bound connections well and
 CPU-bound work poorly.
 
-> **🔄 Current (as of October 2026):** Node.js 24 is the Active LTS release; Node.js 26
-> enters LTS in October 2026. Even-numbered releases become LTS. Node can now run
+> **🔄 Current (as of November 2026):** Node.js 26 became the Active LTS release on
+> October 28, 2026; Node.js 24 is now in Maintenance LTS (supported until April 2028).
+> Even-numbered releases become LTS; starting with Node.js 27, Node moves to one major
+> release a year. Node can now run
 > TypeScript files directly by stripping types (`node file.ts`), though type *checking*
 > still requires the TypeScript compiler.
 

@@ -16,8 +16,8 @@ and depth.
   Version-specific facts go only in 🔄 callouts.
 - Target 4,000–7,000 words. Plain, direct prose; explain *why*; compare with C#/.NET when
   teaching other languages.
-- Current baseline (October 2026): .NET 10 / C# 14 (LTS), PostgreSQL 18, TypeScript 7.0 (native Go compiler, GA July 2026; 6.0 was the last JS-based),
-  React 19, Node 24 LTS, Python 3.14.
+- Current baseline (November 2026): .NET 10 / C# 14 (LTS), PostgreSQL 18, TypeScript 7.0 (native Go compiler, GA July 2026; 6.0 was the last JS-based),
+  React 19, Node 26 LTS (Node 24 in maintenance; book examples work on 24+), Python 3.15 (examples work on 3.12+), Vite 8 (Rolldown).
 
 ## Running project: Beacon
 

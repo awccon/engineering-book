@@ -147,7 +147,7 @@ agent does well before giving it more autonomy.
 You can build agents directly on chat APIs with tool calling (a loop of maybe 100 lines), or use a
 framework:
 
-> **🔄 Current (as of October 2026):** In .NET, **Microsoft Agent Framework** (the successor that
+> **🔄 Current (as of November 2026):** In .NET, **Microsoft Agent Framework** (the successor that
 > unifies Semantic Kernel and AutoGen) provides agents, tools, multi-agent orchestration, workflows
 > with checkpoints and human-in-the-loop, and MCP support, built on `Microsoft.Extensions.AI`. In
 > Python, popular options include LangGraph, the OpenAI Agents SDK, the Claude Agent SDK, CrewAI and

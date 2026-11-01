@@ -1,7 +1,7 @@
 # Python for C# Developers
 
-> **🔄 Current (as of October 2026):** Python 3.14 (released October 2025) is the current
-> stable line, and Python 3.15 is scheduled for release in October 2026. Python releases a new
+> **🔄 Current (as of November 2026):** Python 3.15 (released October 2026) is the current
+> stable line; Python 3.14 (October 2025) remains fully supported. Python releases a new
 > minor version every October, each supported for five years. Examples here work on 3.12+.
 
 Why does a C#/.NET book have a Python section? Because Python is the **lingua franca of AI
@@ -308,7 +308,7 @@ bytecode at a time. Threads still help for I/O (the GIL is released while waitin
 for CPU-bound Python code; use `multiprocessing`/`concurrent.futures.ProcessPoolExecutor`, or
 libraries whose heavy work runs in C/Rust/GPU code outside the GIL.
 
-> **🔄 Current (as of October 2026):** CPython offers an officially supported **free-threaded
+> **🔄 Current (as of November 2026):** CPython offers an officially supported **free-threaded
 > build** (no GIL) since Python 3.14, still optional and with some library compatibility
 > caveats. Most production deployments still use the default build. Check before relying on
 > parallel threads for CPU-bound Python code.
