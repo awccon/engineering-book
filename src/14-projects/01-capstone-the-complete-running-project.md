@@ -204,7 +204,7 @@ the Aspire dashboard showing logs, traces and metrics for all of them. The Rust 
 run separately (`cargo run`, `uv run`) against the same local endpoints, or are added as executables to
 the AppHost.
 
-> **🔄 Current (as of October 2026):** Aspire's hosting APIs (resource names, emulator support, the
+> **🔄 Current (as of November 2026):** Aspire's hosting APIs (resource names, emulator support, the
 > JavaScript/Vite integration, `WaitForCompletion`) have evolved quickly across releases; the shape above
 > is current for Aspire 13.x, but check the documentation for your version. Docker Compose (Book VIII)
 > remains a perfectly good alternative, especially for teams not standardized on Aspire.

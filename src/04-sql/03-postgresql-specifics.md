@@ -1,6 +1,6 @@
 # PostgreSQL Specifics
 
-> **🔄 Current (as of October 2026):** PostgreSQL 18 is the current major version
+> **🔄 Current (as of November 2026):** PostgreSQL 18 is the current major version
 > (released September 2025), adding asynchronous I/O for faster reads, a built-in
 > `uuidv7()` function, virtual generated columns, and OAuth authentication support.
 > PostgreSQL ships a new major version every year, each supported for five years.

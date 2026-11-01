@@ -1,6 +1,6 @@
 # How Programs Run: The .NET Runtime, IL and the JIT
 
-> **🔄 Current (as of October 2026):** .NET 10 is the current Long-Term Support (LTS)
+> **🔄 Current (as of November 2026):** .NET 10 is the current Long-Term Support (LTS)
 > release, shipped November 2025 with C# 14. .NET 11 is in preview and is expected in
 > November 2026. Code in this chapter targets .NET 10 (`net10.0`).
 
@@ -414,7 +414,7 @@ with a shorter support window. Monthly patch releases ("Patch Tuesday") carry se
 fixes. Production systems usually target the current LTS and plan an upgrade every two
 years.
 
-> **🔄 Current (as of October 2026):** see the
+> **🔄 Current (as of November 2026):** see the
 > [official .NET support policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core)
 > for exact end-of-support dates.
 

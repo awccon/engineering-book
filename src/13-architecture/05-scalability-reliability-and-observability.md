@@ -161,9 +161,10 @@ When a component reaches its limit, try the cheapest steps first:
 Each step up the ladder adds operational complexity. Many systems never need steps 7 and 8; plenty of
 large businesses run on one well-tuned PostgreSQL primary with replicas.
 
-> **🔄 Current (as of October 2026):** For PostgreSQL scale-out on Azure, **Azure Cosmos DB for PostgreSQL**
-> (Citus) distributes tables across nodes by a distribution key, and **Azure Database for PostgreSQL
-> Flexible Server** offers larger compute tiers, read replicas and elastic clusters. The details change
+> **🔄 Current (as of November 2026):** For PostgreSQL scale-out on Azure, **Azure Database for PostgreSQL
+> Flexible Server** offers larger compute tiers, read replicas and **elastic clusters**, which distribute
+> tables across nodes by a distribution key using the Citus extension. The older **Azure Cosmos DB for
+> PostgreSQL** (also Citus-based) is on a retirement path and no longer recommended for new projects. The details change
 > often; check current limits before choosing, and measure whether you need distribution at all.
 
 ---

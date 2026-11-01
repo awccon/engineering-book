@@ -208,7 +208,7 @@ standard way: an **MCP server** offers tools (e.g. "search Beacon tickets"), and
 **client** (AI assistants, IDEs, agent frameworks) can use them. Instead of writing integrations
 for each AI app, you write one server.
 
-> **🔄 Current (as of October 2026):** MCP has broad adoption across AI assistants, IDEs and agent
+> **🔄 Current (as of November 2026):** MCP has broad adoption across AI assistants, IDEs and agent
 > frameworks, with official SDKs in many languages, including C# (`ModelContextProtocol` package).
 > Remote MCP servers use HTTP transports with OAuth-based authorization.
 

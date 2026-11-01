@@ -355,7 +355,7 @@ shift slightly between editions; the underlying issues are stable. Where this bo
 | Logging and alerting failures | Book IX, Ch 6; this chapter, section 6 |
 | Mishandling of exceptional conditions (failing open, leaking errors) | Book I, Ch 8; Book III, Ch 10; Chapter 3 |
 
-> **🔄 Current (as of October 2026):** OWASP published a 2025 edition of the web Top 10, which elevated
+> **🔄 Current (as of November 2026):** OWASP published a 2025 edition of the web Top 10, which elevated
 > software supply chain failures and added the mishandling of exceptional conditions as categories.
 > OWASP also maintains a Top 10 for LLM applications (prompt injection, sensitive information disclosure,
 > excessive agency and others; Book XI, Chapter 9) and an API Security Top 10. Read the current lists

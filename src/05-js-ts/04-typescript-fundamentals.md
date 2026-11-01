@@ -1,6 +1,6 @@
 # TypeScript Fundamentals
 
-> **🔄 Current (as of October 2026):** TypeScript 7.0 (released July 2026) is the first
+> **🔄 Current (as of November 2026):** TypeScript 7.0 (released July 2026) is the first
 > version built on the new **native compiler written in Go**, roughly 10× faster than the
 > JavaScript-based compiler for type checking large projects. TypeScript 6.0 (March 2026)
 > was the last JavaScript-based release and served as a bridge, deprecating legacy

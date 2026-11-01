@@ -314,11 +314,12 @@ mitigations like rolling back or scaling.
 a provider SDK for the agent loop, your observability backend's query API, Azure or Container Apps APIs
 for actions.
 
-> **🔄 Current (as of October 2026):** MCP (Model Context Protocol) has become the common way to expose
+> **🔄 Current (as of November 2026):** MCP (Model Context Protocol) has become the common way to expose
 > tools and data to AI assistants and agents, with official SDKs in several languages including C#,
 > TypeScript, Python and Rust, and support in major assistants and IDEs. The specification continues to
-> evolve, particularly around authorization for remote servers; check the current spec and your SDK's
-> version before building.
+> evolve: the 2026-07-28 revision made the protocol stateless (no initialization handshake or session
+> header) and tightened authorization for remote servers. Check the current spec and your SDK's version
+> before building.
 
 **Done when** the agent correctly diagnoses at least 4 of 5 staged incidents within its budget, no write
 action can happen without approval (tested, including injection attempts), and the audit log can

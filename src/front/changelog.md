@@ -3,6 +3,17 @@
 Every update to the book is logged here, newest first. Updates are proposed as pull
 requests, reviewed, then merged.
 
+## 2026-11-01
+
+- Book V, Chapter 2: Node.js 26 is now Active LTS (since October 28, 2026); Node.js 24 is in Maintenance LTS; annual release schedule from Node.js 27.
+- Book V, Chapter 3: Vite 8 (March 2026) uses Rolldown as its single bundler; previously described as "moving to" Rolldown.
+- Book IX, Chapter 4: added Azure Cache for Redis retirement dates (Enterprise tiers March 31, 2027; Basic/Standard/Premium September 30, 2028).
+- Book X, Chapter 1: Python 3.15 was released in October 2026 and is the current stable line.
+- Book XIII, Chapter 4: MassTransit 9 has shipped under a commercial license (was "announced").
+- Book XIII, Chapter 5: Azure Cosmos DB for PostgreSQL is on a retirement path; elastic clusters in Azure Database for PostgreSQL Flexible Server are the recommended scale-out option.
+- Book XIV, Chapter 2: noted the MCP 2026-07-28 specification (stateless protocol, tightened authorization).
+- Re-verified and updated the "as of" month on 14 other callouts (.NET 10/11 and support dates, PostgreSQL 18, TypeScript 7.0, React 19, Python free-threading, Rust, MCP, Agent Framework, Aspire 13.x, Idempotency-Key draft, OWASP Top 10).
+
 ## 2026-10-07
 
 - Book XIV, Chapter 2: Further Projects, and the afterword. All 95 chapters are complete.

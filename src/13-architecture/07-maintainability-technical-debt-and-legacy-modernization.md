@@ -148,7 +148,7 @@ Leave ugly-but-stable code alone.
 (Renovate, Dependabot), a habit of upgrading to each .NET LTS release within months of its release, and
 CI that runs against the next version early.
 
-> **🔄 Current (as of October 2026):** .NET 10 (LTS, released November 2025) is supported until November
+> **🔄 Current (as of November 2026):** .NET 10 (LTS, released November 2025) is supported until November
 > 2028. .NET 8 (LTS) and .NET 9 (STS, whose support Microsoft extended to 24 months) both reach end of
 > support on **November 10, 2026**, so applications still on them should be upgrading now. .NET 11 is
 > expected in November 2026 as an STS release. .NET Framework 4.8.1 remains supported as a Windows

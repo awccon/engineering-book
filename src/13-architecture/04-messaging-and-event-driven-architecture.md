@@ -486,10 +486,10 @@ inside the inbox transaction from section 5. Operational settings that matter:
 - **Identity**: the worker uses its managed identity with "Azure Service Bus Data Receiver" on its
   subscriptions only; the relay has "Data Sender" on the topic only.
 
-> **🔄 Current (as of October 2026):** In .NET, teams either use the Azure SDK (`Azure.Messaging.ServiceBus`)
+> **🔄 Current (as of November 2026):** In .NET, teams either use the Azure SDK (`Azure.Messaging.ServiceBus`)
 > directly, as above, or a messaging framework that adds outbox/inbox, sagas, retries and
-> transport abstraction: NServiceBus (commercial), MassTransit (version 8 is open source; the maintainers
-> announced commercial licensing from version 9), Wolverine, Rebus, or Dapr's pub/sub building block.
+> transport abstraction: NServiceBus (commercial), MassTransit (version 8 is open source; version 9 and
+> later are commercial), Wolverine, Rebus, or Dapr's pub/sub building block.
 > Frameworks save a lot of plumbing for saga-heavy systems; for a handful of events, direct SDK use with
 > a small dispatcher is easy to understand. Check licenses before you commit.
 

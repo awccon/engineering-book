@@ -275,7 +275,7 @@ Points that make this correct rather than merely plausible:
   claim, the work and the stored response are in **one database transaction**, which is possible here
   because Beacon's ticket creation is a single PostgreSQL transaction).
 
-> **🔄 Current (as of October 2026):** An IETF draft, "The Idempotency-Key HTTP Header Field", standardizes
+> **🔄 Current (as of November 2026):** An IETF draft, "The Idempotency-Key HTTP Header Field", standardizes
 > the header name and semantics; payment APIs such as Stripe's popularized the pattern. ASP.NET Core has
 > no built-in idempotency middleware, so teams write a filter like this or use a library.
 

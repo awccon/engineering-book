@@ -1,6 +1,6 @@
 # Relational Thinking
 
-> **🔄 Current (as of October 2026):** Examples target PostgreSQL 18. Almost everything in
+> **🔄 Current (as of November 2026):** Examples target PostgreSQL 18. Almost everything in
 > this chapter applies to any relational database (SQL Server, MySQL, Oracle, SQLite).
 
 Most application bugs eventually become data bugs. A missing constraint lets two users
